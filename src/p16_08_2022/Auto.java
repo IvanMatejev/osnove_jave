@@ -10,7 +10,58 @@ public class Auto {
 	public int godProizvodnje;
 	public int registrovanDo;
 	public int kubika;
+	public String brRegistracije;
+	public boolean klima;
+	public int maxBrzina;
+	public int kapacitetRezervoara;
+	public int kolicinaGoriva;
 	
+	
+	
+	public int natociGorivo ( int litara ) {
+		if( this.kolicinaGoriva + litara <= this.kapacitetRezervoara) {
+			return litara * 170;
+		}else {
+			return this.kapacitetRezervoara - this.kolicinaGoriva;
+		}
+	}
+	
+	public void stampajTablu() {
+		for( int i = 1 ; i <= 100 ; i++ ) {
+			if( i <= (this.trenutnaBrzina*100)/this.maxBrzina) {
+				System.out.print("|");
+			}else {
+				System.out.print(".");
+			}
+		}
+	}
+	
+	public double potrosnja() {
+		if( this.klima == true ) {
+			return (this.trenutnaBrzina/100 * this.potrosnja)*1.2;
+		}else if( this.klima == false ) {
+			return this.trenutnaBrzina/100 * this.potrosnja;
+		}else {
+			return 0;
+		}
+		
+	}  
+	
+	public void dodajGas() {
+		if ( this.trenutnaBrzina + 10 < this.maxBrzina ) {
+			this.trenutnaBrzina += 10;
+		}else {
+			this.trenutnaBrzina = this.maxBrzina;
+		}
+	}
+	
+	public void koci() {
+		if( this.trenutnaBrzina - 10 > 0 ) {
+			this.trenutnaBrzina -= 10;
+		} else {
+			this.trenutnaBrzina = 0;
+		}
+	}
 	
 	public void print () {
 		System.out.println(this.vozac);
@@ -42,7 +93,7 @@ public class Auto {
 		if (this.kubika < 2000) {
 			return this.kubika * 100;
 		}else {
-			return this.kubika * 100 + (this.kubika * 100 * 0.33);
+			return this.kubika * 100 *1.33;
 		}
 	}
 	

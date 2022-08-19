@@ -22,11 +22,12 @@ public class Zadatak3 {
 		auto1.marka= "Volvo";
 		auto1.vrata= 5;
 		auto1.potrosnja= 10;
-		auto1.trenutnaBrzina= 120;
+		auto1.trenutnaBrzina= 180;
 		auto1.ogranicenje=80;
 		auto1.godProizvodnje=1940;
 		auto1.registrovanDo=8;
 		auto1.kubika=2000;
+		auto1.maxBrzina=240;
 
 		
 		auto1.print();
@@ -54,6 +55,8 @@ public class Zadatak3 {
 		
 		System.out.println("Kubikaza auta je " + auto1.kubika);
 		System.out.println("Registracija za vase vozilo je " + auto1.registracija());
+		
+		auto1.stampajTablu();
 		
 		
 		
