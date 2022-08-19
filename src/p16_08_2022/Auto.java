@@ -22,7 +22,7 @@ public class Auto {
 		if( this.kolicinaGoriva + litara <= this.kapacitetRezervoara) {
 			return litara * 170;
 		}else {
-			return this.kapacitetRezervoara - this.kolicinaGoriva;
+			return (this.kapacitetRezervoara - this.kolicinaGoriva)*170;
 		}
 	}
 	
