@@ -4,17 +4,17 @@ public class Radnik {
 	private String jmbg;
 	private String imePrezime;
 	private int brDece;
-	private int sss;
+	private int ss;
 	private int radniStaz;
 	
 	public Radnik ( String jmbg) {
 		this.jmbg = jmbg;
 	}
-	public Radnik ( String jmbg, String imePrezime, int brDece, int sss, int radniStaz ) {
+	public Radnik ( String jmbg, String imePrezime, int brDece, int ss, int radniStaz ) {
 		this.jmbg = jmbg;
 		this.imePrezime = imePrezime;
 		this.brDece = brDece ;
-		this.sss = sss ; 
+		this.ss = ss ; 
 		this.radniStaz = radniStaz;
 	}
 	public String getImePrezime () {
@@ -29,11 +29,11 @@ public class Radnik {
 	public void setBrDece ( int brDece ) {
 		this.brDece = brDece;
 	}
-	public int getSss () {
-		return this.sss;
+	public int getSs () {
+		return this.ss;
 	}
-	public void setSss ( int sss ) {
-		this.sss = sss;
+	public void setSs ( int ss ) {
+		this.ss = ss;
 	}
 	public int getRadniStaz () {
 		return this.radniStaz;
