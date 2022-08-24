@@ -28,6 +28,17 @@ public class Zadatak2_proizvod {
 //			               (sifra) - (naziv)
 //			   (cena za odgovarajucu mernu jedinicu) (merna jedinica) x (tezina) 
 //			   Ukupno: (ukupna cena)
+		Proizvod kafa = new Proizvod(353, "grand" , 150);
+		Proizvod zejtin = new Proizvod(555, "dukat", 200);
+		Vaga merenje = new Vaga();
+		
+		merenje.setProizvod(kafa);
+		merenje.setMernaJedinica("kg");
+		merenje.print();
+		System.out.println();
+		merenje.setProizvod(zejtin);
+		merenje.setMernaJedinica("lb");
+		merenje.print();
 
 
 	}
