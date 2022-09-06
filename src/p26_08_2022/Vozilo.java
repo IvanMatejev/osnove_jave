@@ -1,6 +1,6 @@
 package p26_08_2022;
 
-public class Vozilo {
+public abstract class Vozilo {
 	protected String registracija;
 	protected String marka;
 	protected int brzina;
@@ -82,12 +82,6 @@ public class Vozilo {
 
 
 
-	public void print () {
-		System.out.println(this.registracija);
-		System.out.println(this.brzina);
-		System.out.println(this.marka);
-		System.out.println(this.maxBrzina);
-		System.out.println(this.kubikaza);
-	}
+	public abstract void print ();
 	
 }

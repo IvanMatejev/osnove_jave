@@ -6,7 +6,7 @@ public class Predavanje1 {
 		// TODO Auto-generated method stub
 		Kamion kamion = new Kamion("ni123", "volvo", 120, 1500, 240);
 		
-		Vozilo v = new Vozilo("ni12345", "bmw", 100, 2000, 120);
+//		Vozilo v = new Vozilo("ni12345", "bmw", 100, 2000, 120);
 		
 //		kamion.setBrzina(100);
 //		kamion.setKubikaza(1000);
@@ -18,7 +18,7 @@ public class Predavanje1 {
 //		
 //		Auto auto = new Auto();
 		
-		kamion.stampaj();
+		
 		
 		
 	}

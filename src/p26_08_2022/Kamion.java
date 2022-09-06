@@ -11,10 +11,15 @@ public class Kamion extends Vozilo {
 	public Kamion ( String registracija, String marka, int brzina, int kubikaza, int maxBrzina ) {
 		super(registracija, marka, brzina, kubikaza, maxBrzina);
 	}
-	
-	public void stampaj () {
-		this.print();
-		System.out.println("Nosivost:" + this.nosivost);
+
+	@Override
+	public void print() {
+		// TODO Auto-generated method stub
+		
 	}
+	
+//	public void print () {
+//		System.out.println("Nosivost:" + this.nosivost);
+//	}
 	
 }
