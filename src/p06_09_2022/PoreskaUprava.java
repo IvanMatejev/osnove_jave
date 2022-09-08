@@ -6,6 +6,16 @@ public class PoreskaUprava {
 	private String grad;
 	private ArrayList<Objekat> objekti = new ArrayList<Objekat>();
 	
+	
+	
+	public PoreskaUprava() {
+	}
+
+	public PoreskaUprava(String grad) {
+		super();
+		this.grad = grad;
+	}
+
 	public void dodajObjekat ( Objekat objekat) {
 		objekti.add(objekat);
 	}
