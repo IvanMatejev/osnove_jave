@@ -32,13 +32,13 @@ public class PlaninarskiDom {
 	}
 	
 	public int brojPopelihPlaninara ( Planina planina ) {
-		int suma = 0;
+		int count = 0;
 		for ( int i = 0; i < this.clanovi.size(); i++ ) {
 			if ( this.clanovi.get(i).uspesanUspon(planina) == true ) {
-				suma++;
+				count++;
 			}
 		}
-		return suma;
+		return count;
 	}
 	
 	public void izbaciPlaninara ( String jci ) {
