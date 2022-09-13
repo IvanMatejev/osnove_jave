@@ -19,6 +19,8 @@ public class Main_class {
 		InstagramUser pera = new InstagramUser("pera_kida", "Pera Peric");
 		
 		story.postaviStori();
+		story.postaviStori();
+		
 		
 		story.pogledajStori(milan);
 		story.pogledajStori(pera);
