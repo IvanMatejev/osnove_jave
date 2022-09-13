@@ -18,9 +18,9 @@ public class Zadatak3_sastojak {
 //			 U glavnom programu kreirati niz sastojaka ucitavajuci ih od korisnika. Ucitavaju se N sastojaka i na kraju odstampati niz. 
 //			 Koristeci ArrayList-e
 		
-//		Sastojak secer = new Sastojak("Secer", 80);
-//		Sastojak mleko = new Sastojak("Mleko", 80);
-//		Sastojak secer = new Sastojak("Secer", 80);
+		Sastojak secer = new Sastojak("Secer", 80);
+		Sastojak mleko = new Sastojak("Mleko", 80);
+
 		
 		Scanner s = new Scanner(System.in);
 		System.out.println("Unesite broj sastojaka: ");
